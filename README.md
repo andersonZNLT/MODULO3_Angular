@@ -17,5 +17,5 @@ ng new course-manager
 -Para ipara inicializar a aplicação, basta navegar atá a pasta criada, neste caso o "course-manager" e dar o comando:
 ng serve
 
-- para visualizar o resultado, basta abrir o navegador e acessar o endereço:
+-para visualizar o resultado, basta abrir o navegador e acessar o endereço:
 localhost:4200
