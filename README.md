@@ -14,8 +14,14 @@ ng version
 -Dentro da pasta raiz, vamos criar um projeto chamado "course-manager" com o seguinte comando:
 ng new course-manager
 
--Para ipara inicializar a aplicação, basta navegar atá a pasta criada, neste caso o "course-manager" e dar o comando:
+-Para inicializar a aplicação, basta navegar atá a pasta criada, neste caso o "course-manager" e dar o comando:
 ng serve
 
 -para visualizar o resultado, basta abrir o navegador e acessar o endereço:
 localhost:4200
+
+------
+## instalar o bootstrap
+
+-comando:
+npm install bootstrap
