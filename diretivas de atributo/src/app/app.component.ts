@@ -8,6 +8,20 @@
 export class AppComponent implements OnInit{
   title = 'Aula diretivas de atributo';
   count = 0;
+  pessoas = [
+    {
+      nome: "Anderson",
+      sobrenome: "Zanelatto"
+    },
+    {
+      nome: "Monise",
+      sobrenome: "Minato"
+    },
+    {
+      nome: "Dante",
+      sobrenome: "Ledesma"
+    },
+  ];
 
   constructor(){
 

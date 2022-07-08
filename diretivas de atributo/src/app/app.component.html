@@ -1,10 +1,10 @@
 <h1 class="text-success text-center">Contador</h1>
 
-<div 
+<div
   [ngStyle]="{background: count <= 5 ? 'red' : 'green'}"
   [ngClass]="{custom: count > 5}">
 
-  <h2 class="text-center">Contador: {{count}}</h2> 
+  <h2 class="text-center">Contador: {{count}}</h2>
 </div>
 
 <!-- Diretivas Estruturais -->
@@ -16,26 +16,31 @@
 </ng-template>
 
 <ul [ngSwitch]="count" class="list-group mx-auto col-3">
-  <li 
+  <li
       class="list-group-item"
       *ngSwitchCase="3">3
   </li>
-  <li 
+  <li
     class="list-group-item"
     *ngSwitchCase="5">5
   </li>
-  <li 
+  <li
     class="list-group-item"
     *ngSwitchCase="7">7
   </li>
-  <li 
+  <li
     class="list-group-item"
     *ngSwitchCase="9">9
   </li>
-  <li 
+  <li
     class="list-group-item"
     *ngSwitchDefault> Valor default
   </li>
+</ul>
 
-
+<ul  class="list-group mx-auto my-3 col-3">
+  <li
+    class="list-group-item"
+    *ngFor="let pessoa of pessoas"> O nome da pessoa é: {{pessoa.nome}} {{pessoa.sobrenome}}
+  </li>
 </ul>
