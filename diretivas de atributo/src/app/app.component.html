@@ -44,3 +44,22 @@
     *ngFor="let pessoa of pessoas"> O nome da pessoa é: {{pessoa.nome}} {{pessoa.sobrenome}}
   </li>
 </ul>
+
+<!--recebemos esta info da lógica por meio do {{ }}-->
+<div class="col-4 mx-auto my-3">
+  <h5>{{ data }}</h5>
+</div>
+
+<!--vamos passar uma informação do tamplate para a lógica por meio do clicou-->
+<div class="col-4 mx-auto my-3">
+  <button class="btn btn-success col-4 mx-auto" (click)="clicou('teste')">Clique</button>
+</div>
+
+<!--two way databiniding - dado bi-direcional-->
+<div class="col-4 mx-auto">
+  <input
+  type="text" class="form-control"
+  placeholder="Digite algo"
+  [(ngModel)]="text">
+  <h4>Saída: {{ text }} </h4>
+</div>

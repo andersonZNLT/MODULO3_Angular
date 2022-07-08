@@ -8,6 +8,8 @@
 export class AppComponent implements OnInit{
   title = 'Aula diretivas de atributo';
   count = 0;
+  data = 'data binding da lógica (.ts) para template';
+  text = '';
   pessoas = [
     {
       nome: "Anderson",
@@ -33,5 +35,9 @@ export class AppComponent implements OnInit{
         clearInterval(interval);
       }
     }, 1000)
+  }
+
+  public clicou (nome: string): void {
+    console.log('clicou em mim', nome);
   }
 }
