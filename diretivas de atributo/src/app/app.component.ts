@@ -1,4 +1,5 @@
  import { Component, OnInit } from '@angular/core';
+import { PeopleService } from './shared/services/people.service';
 
 @Component({
   selector: 'app-root',
@@ -10,22 +11,8 @@ export class AppComponent implements OnInit{
   count = 0;
   data = 'data binding da lógica (.ts) para template';
   text = '';
-  pessoas = [
-    {
-      nome: "Anderson",
-      sobrenome: "Zanelatto"
-    },
-    {
-      nome: "Monise",
-      sobrenome: "Minato"
-    },
-    {
-      nome: "Dante",
-      sobrenome: "Ledesma"
-    },
-  ];
 
-  constructor(){
+  constructor(private peopleService: PeopleService) {
 
   }
   ngOnInit(): void {
